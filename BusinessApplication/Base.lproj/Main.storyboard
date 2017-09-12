@@ -210,6 +210,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="rEQ-4V-vIa">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="2bf-yu-8DY" kind="relationship" relationship="viewControllers" id="KIy-H6-wS7"/>
@@ -232,6 +234,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KeD-GD-845">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
