@@ -45,7 +45,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BusinessApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="BusinessApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -78,8 +78,11 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvk-Sv-VQx"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Xa-pQs" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Xa-pQs" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="52.5" width="343" height="42.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
@@ -91,8 +94,11 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7f-iZ-dZR"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edN-LB-N50" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edN-LB-N50" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="105" width="343" height="42"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
@@ -104,8 +110,11 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GC9-mW-4py"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13y-HS-8wF" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13y-HS-8wF" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="157" width="343" height="42.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
@@ -117,8 +126,11 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mq3-ik-7xh"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYG-Sg-5Qt" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYG-Sg-5Qt" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="209.5" width="343" height="42.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
@@ -138,7 +150,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Am-Df-CW2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="1k8-RW-K77"/>
+                            <constraint firstItem="9Am-Df-CW2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="1k8-RW-K77"/>
                             <constraint firstAttribute="bottom" secondItem="9Am-Df-CW2" secondAttribute="bottom" constant="20" id="I4Y-a8-lEj"/>
                             <constraint firstAttribute="trailing" secondItem="9Am-Df-CW2" secondAttribute="trailing" constant="16" id="IBa-xk-WME"/>
                             <constraint firstAttribute="bottom" secondItem="unq-on-7QK" secondAttribute="bottom" id="T7V-Sg-HzO"/>
@@ -149,6 +161,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="C9t-tW-JJG"/>
+                    <connections>
+                        <outlet property="aboutUsBtn" destination="edN-LB-N50" id="m4f-Gc-kPb"/>
+                        <outlet property="contactUsBtn" destination="13y-HS-8wF" id="awl-OD-nQo"/>
+                        <outlet property="portfolioBtn" destination="8tm-Xa-pQs" id="ZHp-dV-Vfr"/>
+                        <outlet property="servicesBtn" destination="fJs-s9-OOY" id="nKW-GF-s1V"/>
+                        <outlet property="socialLinksBtn" destination="yYG-Sg-5Qt" id="Vot-32-h6F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,6 +252,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="knK-5R-1gl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="rEQ-4V-vIa">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
