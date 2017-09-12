@@ -10,6 +10,7 @@
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -22,12 +23,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eu5-pB-AjX" customClass="ServicesTableViewCell" customModule="BusinessApplication" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="eu5-pB-AjX" customClass="ServicesTableViewCell" customModule="BusinessApplication" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eu5-pB-AjX" id="Wsy-1V-gaO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="TP3-M7-r34">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRX-fc-EaB">
+                                            <rect key="frame" x="8" y="8" width="359" height="64"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="TP3-M7-r34" secondAttribute="trailing" id="6qt-SR-IrQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="NRX-fc-EaB" secondAttribute="trailing" constant="8" id="7WJ-uG-OXT"/>
+                                        <constraint firstAttribute="bottom" secondItem="NRX-fc-EaB" secondAttribute="bottom" constant="8" id="AaD-lW-hq5"/>
+                                        <constraint firstAttribute="bottom" secondItem="TP3-M7-r34" secondAttribute="bottom" id="LEy-Xv-1T7"/>
+                                        <constraint firstItem="TP3-M7-r34" firstAttribute="leading" secondItem="Wsy-1V-gaO" secondAttribute="leading" id="Qn9-XY-jgj"/>
+                                        <constraint firstItem="NRX-fc-EaB" firstAttribute="top" secondItem="Wsy-1V-gaO" secondAttribute="top" constant="8" id="R7y-Is-Pwu"/>
+                                        <constraint firstItem="TP3-M7-r34" firstAttribute="top" secondItem="Wsy-1V-gaO" secondAttribute="top" id="dBH-Hd-PP2"/>
+                                        <constraint firstItem="NRX-fc-EaB" firstAttribute="leading" secondItem="Wsy-1V-gaO" secondAttribute="leading" constant="8" id="rkh-Dn-gDU"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="vjA-jr-Y5a" kind="show" id="oJT-hS-efi"/>
@@ -43,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDX-pu-qzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164" y="985"/>
+            <point key="canvasLocation" x="-164" y="984.55772113943033"/>
         </scene>
         <!--Services View Controller-->
         <scene sceneID="UaD-yn-BcO">
