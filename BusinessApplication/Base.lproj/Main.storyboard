@@ -60,7 +60,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellTitle" destination="NRX-fc-EaB" id="F2b-UA-6od"/>
-                                    <segue destination="vjA-jr-Y5a" kind="show" id="oJT-hS-efi"/>
+                                    <segue destination="vjA-jr-Y5a" kind="show" identifier="Service" id="oJT-hS-efi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,6 +117,10 @@
                             <constraint firstAttribute="bottom" secondItem="qBy-Vh-XZG" secondAttribute="bottom" id="uG1-lp-0fZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailDescription" destination="qJu-bg-weT" id="ovl-MR-Eic"/>
+                        <outlet property="imageView" destination="bhW-K7-eRW" id="B9h-6v-TDT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PK-En-k2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

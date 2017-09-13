@@ -10,10 +10,20 @@ import UIKit
 
 class ServicesViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var detailDescription: UITextView!
+    
+    
+    var serviceName: String!
+    var serviceImage: String!
+    var serviceDescription: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = serviceName
+        self.imageView.image = UIImage(named: serviceImage)
+        self.detailDescription.text = serviceDescription
     }
 
     override func didReceiveMemoryWarning() {

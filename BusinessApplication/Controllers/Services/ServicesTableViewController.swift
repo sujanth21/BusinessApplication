@@ -11,6 +11,10 @@ import UIKit
 class ServicesTableViewController: UITableViewController {
     
     var serviceTitle = ["Service 1", "Service 2", "Service 3", "Service 4", "Service 5"]
+    
+    var imageList = ["Image1", "Image2", "Image3", "Image4", "Image5"]
+    
+    var serviceDescription = ["", ""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,14 +80,25 @@ class ServicesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "Service" {
+            
+            let detailServiceVC = segue.destination as! ServicesViewController
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                detailServiceVC.serviceName = serviceTitle[indexPath.row] as String
+                detailServiceVC.serviceImage = imageList[indexPath.row] as String
+                detailServiceVC.serviceDescription = serviceDescription[indexPath.row] as String
+            }
+            
+        }
     }
-    */
+    
 
 }
