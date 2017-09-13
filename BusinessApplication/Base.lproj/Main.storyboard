@@ -5,9 +5,13 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Bold</string>
             <string>AvenirNext-Medium</string>
@@ -82,12 +86,41 @@
                     <view key="view" contentMode="scaleToFill" id="7qs-QZ-tLC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="qBy-Vh-XZG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="bhW-K7-eRW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="263"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qJu-bg-weT">
+                                <rect key="frame" x="16" y="271" width="343" height="263"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qBy-Vh-XZG" firstAttribute="leading" secondItem="7qs-QZ-tLC" secondAttribute="leading" id="1dV-vH-MA6"/>
+                            <constraint firstItem="qJu-bg-weT" firstAttribute="height" secondItem="bhW-K7-eRW" secondAttribute="height" id="2nx-ur-4de"/>
+                            <constraint firstAttribute="trailing" secondItem="qBy-Vh-XZG" secondAttribute="trailing" id="8w9-53-Gkb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bhW-K7-eRW" secondAttribute="trailing" constant="-16" id="ODA-h7-CAg"/>
+                            <constraint firstItem="bhW-K7-eRW" firstAttribute="leading" secondItem="7qs-QZ-tLC" secondAttribute="leadingMargin" constant="-16" id="S2l-ch-QeW"/>
+                            <constraint firstItem="bhW-K7-eRW" firstAttribute="top" secondItem="QqS-mA-JGL" secondAttribute="bottom" id="WSj-Pq-ffO"/>
+                            <constraint firstItem="qJu-bg-weT" firstAttribute="top" secondItem="bhW-K7-eRW" secondAttribute="bottom" constant="8" id="d9e-vP-VBR"/>
+                            <constraint firstItem="qJu-bg-weT" firstAttribute="leading" secondItem="7qs-QZ-tLC" secondAttribute="leadingMargin" id="eY4-iZ-N2U"/>
+                            <constraint firstItem="69z-dj-f4v" firstAttribute="top" secondItem="qJu-bg-weT" secondAttribute="bottom" constant="20" id="hHE-q7-Nb1"/>
+                            <constraint firstItem="qJu-bg-weT" firstAttribute="trailing" secondItem="7qs-QZ-tLC" secondAttribute="trailingMargin" id="okw-Vo-KMe"/>
+                            <constraint firstItem="qBy-Vh-XZG" firstAttribute="top" secondItem="7qs-QZ-tLC" secondAttribute="top" id="sLe-gI-Sha"/>
+                            <constraint firstAttribute="bottom" secondItem="qBy-Vh-XZG" secondAttribute="bottom" id="uG1-lp-0fZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PK-En-k2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="988"/>
+            <point key="canvasLocation" x="541.60000000000002" y="987.25637181409309"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -368,6 +401,7 @@
     </scenes>
     <resources>
         <image name="Background" width="2560" height="1600"/>
+        <image name="Image1" width="300" height="168"/>
         <image name="Logo" width="526" height="448"/>
         <image name="Tab1" width="30" height="30"/>
         <image name="Tab2" width="30" height="30"/>
