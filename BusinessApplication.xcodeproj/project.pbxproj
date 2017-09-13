@@ -10,6 +10,7 @@
 		839E5FEB1F6891E100C976DA /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FEA1F6891E100C976DA /* ServicesTableViewController.swift */; };
 		839E5FED1F6891F700C976DA /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FEC1F6891F700C976DA /* ServicesViewController.swift */; };
 		839E5FEF1F68920B00C976DA /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FEE1F68920B00C976DA /* ServicesTableViewCell.swift */; };
+		839E5FF21F69E40800C976DA /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF11F69E40800C976DA /* AboutUsViewController.swift */; };
 		83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474D1F673FF80094440A /* AppDelegate.swift */; };
 		83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474F1F673FF80094440A /* HomeScreenVC.swift */; };
 		83BC47531F673FF80094440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BC47511F673FF80094440A /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		839E5FEA1F6891E100C976DA /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 		839E5FEC1F6891F700C976DA /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		839E5FEE1F68920B00C976DA /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
+		839E5FF11F69E40800C976DA /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		83BC474A1F673FF80094440A /* BusinessApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BC474D1F673FF80094440A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BC474F1F673FF80094440A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 				839E5FEC1F6891F700C976DA /* ServicesViewController.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		839E5FF01F69E3E100C976DA /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				839E5FF11F69E40800C976DA /* AboutUsViewController.swift */,
+			);
+			path = AboutUs;
 			sourceTree = "<group>";
 		};
 		83BC47411F673FF80094440A = {
@@ -86,6 +96,7 @@
 		83BC475F1F67EC5B0094440A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				839E5FF01F69E3E100C976DA /* AboutUs */,
 				839E5FE91F6891AB00C976DA /* Services */,
 				83BC474F1F673FF80094440A /* HomeScreenVC.swift */,
 			);
@@ -183,6 +194,7 @@
 				839E5FEF1F68920B00C976DA /* ServicesTableViewCell.swift in Sources */,
 				839E5FEB1F6891E100C976DA /* ServicesTableViewController.swift in Sources */,
 				83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */,
+				839E5FF21F69E40800C976DA /* AboutUsViewController.swift in Sources */,
 				839E5FED1F6891F700C976DA /* ServicesViewController.swift in Sources */,
 				83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */,
 			);

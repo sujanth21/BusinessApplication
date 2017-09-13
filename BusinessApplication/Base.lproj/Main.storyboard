@@ -260,7 +260,7 @@
         <!--About Us-->
         <scene sceneID="QtE-6K-zm0">
             <objects>
-                <viewController id="bCO-B0-uWJ" sceneMemberID="viewController">
+                <viewController id="bCO-B0-uWJ" customClass="AboutUsViewController" customModule="BusinessApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g8B-Dp-OVy"/>
                         <viewControllerLayoutGuide type="bottom" id="xwU-vr-71F"/>
@@ -297,6 +297,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="contactUsBtnPressed:" destination="bCO-B0-uWJ" eventType="touchUpInside" id="OVf-4D-6xq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
