@@ -266,15 +266,63 @@
                         <viewControllerLayoutGuide type="bottom" id="xwU-vr-71F"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNT-hd-W6O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-SM-6jp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CY8-UU-Iat">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRP-jZ-5lj">
+                                <rect key="frame" x="16" y="247" width="343" height="235"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCd-65-V1U" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                <rect key="frame" x="16" y="503" width="343" height="42.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42.5" id="ftg-mg-XUM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Contact Us">
+                                    <color key="titleColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kV1-SM-6jp" firstAttribute="leading" secondItem="PNT-hd-W6O" secondAttribute="leading" id="6xc-pl-z8R"/>
+                            <constraint firstAttribute="bottom" secondItem="kV1-SM-6jp" secondAttribute="bottom" id="CRi-2E-dDL"/>
+                            <constraint firstItem="CY8-UU-Iat" firstAttribute="top" secondItem="g8B-Dp-OVy" secondAttribute="bottom" id="CW4-Pa-eWA"/>
+                            <constraint firstItem="eRP-jZ-5lj" firstAttribute="top" secondItem="CY8-UU-Iat" secondAttribute="bottom" constant="12" id="IzQ-20-3NS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CY8-UU-Iat" secondAttribute="trailing" constant="-16" id="N5e-i5-XzM"/>
+                            <constraint firstItem="eRP-jZ-5lj" firstAttribute="trailing" secondItem="PNT-hd-W6O" secondAttribute="trailingMargin" id="NLe-xn-yLQ"/>
+                            <constraint firstItem="xwU-vr-71F" firstAttribute="top" secondItem="eCd-65-V1U" secondAttribute="bottom" constant="8.5" id="Q9p-r0-PyP"/>
+                            <constraint firstItem="eCd-65-V1U" firstAttribute="trailing" secondItem="PNT-hd-W6O" secondAttribute="trailingMargin" id="Skh-vt-st0"/>
+                            <constraint firstItem="kV1-SM-6jp" firstAttribute="top" secondItem="PNT-hd-W6O" secondAttribute="top" id="XXV-YA-aKL"/>
+                            <constraint firstItem="eRP-jZ-5lj" firstAttribute="height" secondItem="CY8-UU-Iat" secondAttribute="height" id="gxD-z9-aJj"/>
+                            <constraint firstItem="eCd-65-V1U" firstAttribute="top" secondItem="eRP-jZ-5lj" secondAttribute="bottom" constant="21" id="mgO-8x-g7G"/>
+                            <constraint firstItem="eCd-65-V1U" firstAttribute="leading" secondItem="PNT-hd-W6O" secondAttribute="leadingMargin" id="od5-lL-jut"/>
+                            <constraint firstAttribute="trailing" secondItem="kV1-SM-6jp" secondAttribute="trailing" id="oux-pR-7ER"/>
+                            <constraint firstItem="eRP-jZ-5lj" firstAttribute="leading" secondItem="PNT-hd-W6O" secondAttribute="leadingMargin" id="pKX-ux-RwN"/>
+                            <constraint firstItem="CY8-UU-Iat" firstAttribute="leading" secondItem="PNT-hd-W6O" secondAttribute="leadingMargin" constant="-16" id="ybl-Hd-SPl"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About Us" image="Tab2" id="UNP-TY-dP1"/>
+                    <navigationItem key="navigationItem" title="About Us" id="ehT-rw-4u5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsw-tr-BUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="985"/>
+            <point key="canvasLocation" x="2032.8" y="983.65817091454278"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="M2O-Ng-mpd">
@@ -347,7 +395,7 @@
                         <segue destination="Jpi-gM-A09" kind="relationship" relationship="viewControllers" id="wqJ-IH-Xp5"/>
                         <segue destination="lHb-Hh-O0M" kind="relationship" relationship="viewControllers" id="f3f-oQ-rWv"/>
                         <segue destination="dq5-dc-vKz" kind="relationship" relationship="viewControllers" id="k3q-DL-KJT"/>
-                        <segue destination="bCO-B0-uWJ" kind="relationship" relationship="viewControllers" id="rMB-Df-fZb"/>
+                        <segue destination="vDW-LB-Y9N" kind="relationship" relationship="viewControllers" id="rMB-Df-fZb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zv6-xF-ZqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -401,6 +449,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcM-Dj-hZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-961" y="985"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="Q5A-F3-hFy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vDW-LB-Y9N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About Us" image="Tab2" id="UNP-TY-dP1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7OX-kw-BRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bCO-B0-uWJ" kind="relationship" relationship="rootViewController" id="Rtd-XH-FFd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTk-yd-yky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299.2" y="984.10794602698661"/>
         </scene>
     </scenes>
     <resources>
