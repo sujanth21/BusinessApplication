@@ -11,6 +11,8 @@
 		839E5FED1F6891F700C976DA /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FEC1F6891F700C976DA /* ServicesViewController.swift */; };
 		839E5FEF1F68920B00C976DA /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FEE1F68920B00C976DA /* ServicesTableViewCell.swift */; };
 		839E5FF21F69E40800C976DA /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF11F69E40800C976DA /* AboutUsViewController.swift */; };
+		839E5FF51F6B369700C976DA /* PortfolioCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF41F6B369700C976DA /* PortfolioCollectionViewController.swift */; };
+		839E5FF71F6B36AE00C976DA /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */; };
 		83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474D1F673FF80094440A /* AppDelegate.swift */; };
 		83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474F1F673FF80094440A /* HomeScreenVC.swift */; };
 		83BC47531F673FF80094440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BC47511F673FF80094440A /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		839E5FEC1F6891F700C976DA /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		839E5FEE1F68920B00C976DA /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		839E5FF11F69E40800C976DA /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		839E5FF41F6B369700C976DA /* PortfolioCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewController.swift; sourceTree = "<group>"; };
+		839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
 		83BC474A1F673FF80094440A /* BusinessApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BC474D1F673FF80094440A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BC474F1F673FF80094440A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -62,6 +66,23 @@
 			path = AboutUs;
 			sourceTree = "<group>";
 		};
+		839E5FF31F6B367A00C976DA /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				839E5FF41F6B369700C976DA /* PortfolioCollectionViewController.swift */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		839E5FF81F6B36B800C976DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83BC474D1F673FF80094440A /* AppDelegate.swift */,
+				83BC47561F673FF80094440A /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		83BC47411F673FF80094440A = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +102,12 @@
 		83BC474C1F673FF80094440A /* BusinessApplication */ = {
 			isa = PBXGroup;
 			children = (
+				839E5FF81F6B36B800C976DA /* Supporting Files */,
 				83BC47611F67EC6E0094440A /* Views */,
 				83BC47601F67EC660094440A /* Models */,
 				83BC475F1F67EC5B0094440A /* Controllers */,
-				83BC474D1F673FF80094440A /* AppDelegate.swift */,
 				83BC47511F673FF80094440A /* Main.storyboard */,
 				83BC47541F673FF80094440A /* Assets.xcassets */,
-				83BC47561F673FF80094440A /* LaunchScreen.storyboard */,
 				83BC47591F673FF80094440A /* Info.plist */,
 			);
 			path = BusinessApplication;
@@ -96,6 +116,7 @@
 		83BC475F1F67EC5B0094440A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				839E5FF31F6B367A00C976DA /* Portfolio */,
 				839E5FF01F69E3E100C976DA /* AboutUs */,
 				839E5FE91F6891AB00C976DA /* Services */,
 				83BC474F1F673FF80094440A /* HomeScreenVC.swift */,
@@ -107,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				839E5FEE1F68920B00C976DA /* ServicesTableViewCell.swift */,
+				839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,10 +215,12 @@
 				83BC47631F67EC970094440A /* RoundedCornerButton.swift in Sources */,
 				839E5FEF1F68920B00C976DA /* ServicesTableViewCell.swift in Sources */,
 				839E5FEB1F6891E100C976DA /* ServicesTableViewController.swift in Sources */,
+				839E5FF51F6B369700C976DA /* PortfolioCollectionViewController.swift in Sources */,
 				83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */,
 				839E5FF21F69E40800C976DA /* AboutUsViewController.swift in Sources */,
 				839E5FED1F6891F700C976DA /* ServicesViewController.swift in Sources */,
 				83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */,
+				839E5FF71F6B36AE00C976DA /* PortfolioCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
