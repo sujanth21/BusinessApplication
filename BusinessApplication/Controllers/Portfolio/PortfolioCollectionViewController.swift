@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class PortfolioCollectionViewController: UICollectionViewController {
+class PortfolioCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var imageList = ["Image1", "Image2", "Image3", "Image4", "Image5"]
 
@@ -51,6 +51,28 @@ class PortfolioCollectionViewController: UICollectionViewController {
         cell.cellImage.image = UIImage(named: imageList[indexPath.row])
     
         return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let screenSize: CGRect = UIScreen.main.bounds
+        
+        var widthCell = 0
+        var heightCell = 0
+        
+        if screenSize.width == 320 {
+            widthCell = 130
+            heightCell = 130
+        } else if screenSize.width == 375 {
+            widthCell = 160
+            heightCell = 160
+        } else if screenSize.width == 414 {
+            widthCell = 180
+            heightCell = 180
+        }
+        
+        return CGSize(width: widthCell, height: heightCell)
     }
 
     // MARK: UICollectionViewDelegate
