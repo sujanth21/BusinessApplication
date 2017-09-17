@@ -379,7 +379,7 @@
         <!--Contact Us-->
         <scene sceneID="jyZ-aJ-Rgr">
             <objects>
-                <viewController id="Jpi-gM-A09" sceneMemberID="viewController">
+                <viewController id="Jpi-gM-A09" customClass="ContactUsViewController" customModule="BusinessApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uLi-MA-wf3"/>
                         <viewControllerLayoutGuide type="bottom" id="4cG-nC-BxB"/>
@@ -486,6 +486,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Us" id="9of-tf-RpM"/>
+                    <connections>
+                        <outlet property="mapView" destination="bdg-26-TU5" id="z4R-IM-HC9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bar-e5-YIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

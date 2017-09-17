@@ -13,6 +13,8 @@
 		839E5FF21F69E40800C976DA /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF11F69E40800C976DA /* AboutUsViewController.swift */; };
 		839E5FF51F6B369700C976DA /* PortfolioCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF41F6B369700C976DA /* PortfolioCollectionViewController.swift */; };
 		839E5FF71F6B36AE00C976DA /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */; };
+		839E5FFB1F6E045100C976DA /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FFA1F6E045100C976DA /* ContactUsViewController.swift */; };
+		839E5FFE1F6E049E00C976DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E5FFD1F6E049E00C976DA /* MapKit.framework */; };
 		83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474D1F673FF80094440A /* AppDelegate.swift */; };
 		83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474F1F673FF80094440A /* HomeScreenVC.swift */; };
 		83BC47531F673FF80094440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BC47511F673FF80094440A /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		839E5FF11F69E40800C976DA /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		839E5FF41F6B369700C976DA /* PortfolioCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewController.swift; sourceTree = "<group>"; };
 		839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
+		839E5FFA1F6E045100C976DA /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		839E5FFD1F6E049E00C976DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		83BC474A1F673FF80094440A /* BusinessApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BC474D1F673FF80094440A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BC474F1F673FF80094440A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839E5FFE1F6E049E00C976DA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +88,28 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		839E5FF91F6E042200C976DA /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				839E5FFA1F6E045100C976DA /* ContactUsViewController.swift */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		839E5FFC1F6E049E00C976DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				839E5FFD1F6E049E00C976DA /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83BC47411F673FF80094440A = {
 			isa = PBXGroup;
 			children = (
 				83BC474C1F673FF80094440A /* BusinessApplication */,
 				83BC474B1F673FF80094440A /* Products */,
+				839E5FFC1F6E049E00C976DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +138,7 @@
 		83BC475F1F67EC5B0094440A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				839E5FF91F6E042200C976DA /* ContactUs */,
 				839E5FF31F6B367A00C976DA /* Portfolio */,
 				839E5FF01F69E3E100C976DA /* AboutUs */,
 				839E5FE91F6891AB00C976DA /* Services */,
@@ -173,6 +196,11 @@
 				TargetAttributes = {
 					83BC47491F673FF80094440A = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -219,6 +247,7 @@
 				83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */,
 				839E5FF21F69E40800C976DA /* AboutUsViewController.swift in Sources */,
 				839E5FED1F6891F700C976DA /* ServicesViewController.swift in Sources */,
+				839E5FFB1F6E045100C976DA /* ContactUsViewController.swift in Sources */,
 				83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */,
 				839E5FF71F6B36AE00C976DA /* PortfolioCollectionViewCell.swift in Sources */,
 			);
