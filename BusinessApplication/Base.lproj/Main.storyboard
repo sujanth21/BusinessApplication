@@ -385,15 +385,111 @@
                         <viewControllerLayoutGuide type="bottom" id="4cG-nC-BxB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YVH-6H-su7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ad7-jG-RMo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-26-TU5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zvW-uM-2l7">
+                                <rect key="frame" x="16" y="294" width="343" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45 Hutton Street, Thornbury, Australia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JdZ-6i-X00">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-u8-5nM" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Directions">
+                                            <color key="titleColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lcf-ee-lPv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJM-Sd-rUi" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Call Us">
+                                            <color key="titleColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HHR-eB-8fS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHQ-g9-ceG" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="343" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Email Us">
+                                            <color key="titleColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SN5-2d-Upe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcl-8m-76g" customClass="RoundedCornerButton" customModule="BusinessApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="200" width="343" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Social Links">
+                                            <color key="titleColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaJ-n7-wyu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zvW-uM-2l7" firstAttribute="leading" secondItem="YVH-6H-su7" secondAttribute="leadingMargin" id="0sb-zd-Vfe"/>
+                            <constraint firstItem="bdg-26-TU5" firstAttribute="top" secondItem="YVH-6H-su7" secondAttribute="top" id="Bml-FU-Qnt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zvW-uM-2l7" secondAttribute="trailing" id="EJM-Tu-CSk"/>
+                            <constraint firstAttribute="trailing" secondItem="ad7-jG-RMo" secondAttribute="trailing" id="FY6-PQ-fhR"/>
+                            <constraint firstItem="bdg-26-TU5" firstAttribute="leading" secondItem="YVH-6H-su7" secondAttribute="leading" id="LHB-C8-Bdd"/>
+                            <constraint firstItem="ad7-jG-RMo" firstAttribute="top" secondItem="YVH-6H-su7" secondAttribute="top" id="Zzi-Xb-bZZ"/>
+                            <constraint firstItem="ad7-jG-RMo" firstAttribute="leading" secondItem="YVH-6H-su7" secondAttribute="leading" id="b5v-FD-GLZ"/>
+                            <constraint firstItem="4cG-nC-BxB" firstAttribute="top" secondItem="zvW-uM-2l7" secondAttribute="bottom" constant="20" id="bip-pl-Hrh"/>
+                            <constraint firstAttribute="bottom" secondItem="ad7-jG-RMo" secondAttribute="bottom" id="efV-Ba-0f0"/>
+                            <constraint firstAttribute="trailing" secondItem="bdg-26-TU5" secondAttribute="trailing" id="hOf-Zw-qkn"/>
+                            <constraint firstItem="zvW-uM-2l7" firstAttribute="top" secondItem="bdg-26-TU5" secondAttribute="bottom" constant="8" id="yg4-FO-DSr"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact Us" image="Tab5" id="Egn-bR-Ekq"/>
+                    <navigationItem key="navigationItem" title="Contact Us" id="9of-tf-RpM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bar-e5-YIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295.2" y="-554.57271364317842"/>
+            <point key="canvasLocation" x="2032.8" y="-555.47226386806597"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1po-0m-pRn">
@@ -409,7 +505,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="2bf-yu-8DY" kind="relationship" relationship="viewControllers" id="KIy-H6-wS7"/>
-                        <segue destination="Jpi-gM-A09" kind="relationship" relationship="viewControllers" id="wqJ-IH-Xp5"/>
+                        <segue destination="nI5-bM-tzw" kind="relationship" relationship="viewControllers" id="wqJ-IH-Xp5"/>
                         <segue destination="lHb-Hh-O0M" kind="relationship" relationship="viewControllers" id="f3f-oQ-rWv"/>
                         <segue destination="atw-Ad-0Bd" kind="relationship" relationship="viewControllers" id="k3q-DL-KJT"/>
                         <segue destination="vDW-LB-Y9N" kind="relationship" relationship="viewControllers" id="rMB-Df-fZb"/>
@@ -514,6 +610,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyD-o7-44K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-540.79999999999995" y="-665.6671664167917"/>
+        </scene>
+        <!--Contact Us-->
+        <scene sceneID="Juz-Mt-6JS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nI5-bM-tzw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact Us" image="Tab5" id="Egn-bR-Ekq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="9Gj-p3-Owv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.2114540637" green="0.37983450289999998" blue="0.59155696629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jpi-gM-A09" kind="relationship" relationship="rootViewController" id="mDt-2x-VDl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pl6-cY-x4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294.4000000000001" y="-555.02248875562225"/>
         </scene>
     </scenes>
     <resources>
