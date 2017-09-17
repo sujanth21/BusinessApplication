@@ -40,6 +40,7 @@ class ContactUsViewController: UIViewController {
     }
     
     @IBAction func callUsBtnPressed(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "tel://123456")!, options: [:], completionHandler: nil)
     }
     
 
