@@ -416,6 +416,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="directionBtnPressed:" destination="Jpi-gM-A09" eventType="touchUpInside" id="hS8-fo-kxr"/>
                                             <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lcf-ee-lPv"/>
                                         </connections>
                                     </button>
@@ -432,6 +433,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="callUsBtnPressed:" destination="Jpi-gM-A09" eventType="touchUpInside" id="dLi-5f-v6T"/>
                                             <action selector="optionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HHR-eB-8fS"/>
                                         </connections>
                                     </button>
