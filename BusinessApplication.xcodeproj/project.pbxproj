@@ -15,6 +15,7 @@
 		839E5FF71F6B36AE00C976DA /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */; };
 		839E5FFB1F6E045100C976DA /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FFA1F6E045100C976DA /* ContactUsViewController.swift */; };
 		839E5FFE1F6E049E00C976DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E5FFD1F6E049E00C976DA /* MapKit.framework */; };
+		839E60001F6FD37D00C976DA /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FFF1F6FD37D00C976DA /* EmailViewController.swift */; };
 		83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474D1F673FF80094440A /* AppDelegate.swift */; };
 		83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474F1F673FF80094440A /* HomeScreenVC.swift */; };
 		83BC47531F673FF80094440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BC47511F673FF80094440A /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
 		839E5FFA1F6E045100C976DA /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		839E5FFD1F6E049E00C976DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		839E5FFF1F6FD37D00C976DA /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		83BC474A1F673FF80094440A /* BusinessApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BC474D1F673FF80094440A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BC474F1F673FF80094440A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				839E5FFA1F6E045100C976DA /* ContactUsViewController.swift */,
+				839E5FFF1F6FD37D00C976DA /* EmailViewController.swift */,
 			);
 			path = ContactUs;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				839E5FED1F6891F700C976DA /* ServicesViewController.swift in Sources */,
 				839E5FFB1F6E045100C976DA /* ContactUsViewController.swift in Sources */,
 				83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */,
+				839E60001F6FD37D00C976DA /* EmailViewController.swift in Sources */,
 				839E5FF71F6B36AE00C976DA /* PortfolioCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
