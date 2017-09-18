@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class EmailViewController: UIViewController, UITextViewDelegate {
+class EmailViewController: UIViewController, UITextViewDelegate, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -18,11 +19,31 @@ class EmailViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "Email Us"
     }
 
     
     @IBAction func sendEmail(_ sender: Any) {
+        
+        let mailCompose: MFMailComposeViewController = MFMailComposeViewController()
+        mailCompose.mailComposeDelegate = self
+        
+        let recipients = ["abc@123.com"]
+        mailCompose.setToRecipients(recipients)
+        mailCompose.setSubject(nameField.text! + " - my app")
+        mailCompose.setMessageBody("""
+                                     Name: \(nameField.text!)
+                                     Email: \(emailField.text!)
+                                     Message: \(messageField.text!)
+                                     """, isHTML: false)
+        
+        self.present(mailCompose, animated: true
+            , completion: nil)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        self.resignFirstResponder()
     }
     
     @IBAction func dismissKeyboard(_ sender: Any) {
