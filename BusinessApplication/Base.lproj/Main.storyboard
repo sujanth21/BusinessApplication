@@ -697,12 +697,53 @@
                     <view key="view" contentMode="scaleToFill" id="qOT-0b-fpZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TH-0q-a81">
+                                <rect key="frame" x="0.0" y="510" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Refresh" id="VnW-l5-3U1">
+                                        <connections>
+                                            <action selector="reload" destination="eAq-5X-3Hx" id="QGw-ZU-15S"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Stop" id="gaK-Wl-HmY">
+                                        <connections>
+                                            <action selector="stopLoading" destination="eAq-5X-3Hx" id="x4k-MV-Bsl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fRC-Kg-MM1"/>
+                                    <barButtonItem title="Back" id="thG-Wf-7PC">
+                                        <connections>
+                                            <action selector="goBack" destination="eAq-5X-3Hx" id="Dqw-2X-wTp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Forward" id="qnm-dy-zem">
+                                        <connections>
+                                            <action selector="goForward" destination="eAq-5X-3Hx" id="yqx-CP-L6K"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAq-5X-3Hx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0TH-0q-a81" firstAttribute="top" secondItem="eAq-5X-3Hx" secondAttribute="bottom" id="1Do-HM-OSg"/>
+                            <constraint firstItem="0TH-0q-a81" firstAttribute="leading" secondItem="qOT-0b-fpZ" secondAttribute="leading" id="Wfa-H5-h4z"/>
+                            <constraint firstItem="eAq-5X-3Hx" firstAttribute="leading" secondItem="qOT-0b-fpZ" secondAttribute="leading" id="fSw-XA-FjQ"/>
+                            <constraint firstItem="iBK-8K-GUZ" firstAttribute="top" secondItem="0TH-0q-a81" secondAttribute="bottom" id="fYb-uP-YFv"/>
+                            <constraint firstAttribute="trailing" secondItem="0TH-0q-a81" secondAttribute="trailing" id="jBf-6S-3aS"/>
+                            <constraint firstAttribute="trailing" secondItem="eAq-5X-3Hx" secondAttribute="trailing" id="rnd-2F-K0U"/>
+                            <constraint firstItem="eAq-5X-3Hx" firstAttribute="top" secondItem="EOo-9g-ird" secondAttribute="bottom" id="wB4-qH-v6I"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qw3-DD-TAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3116" y="260"/>
+            <point key="canvasLocation" x="3116" y="259.52023988005999"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1po-0m-pRn">
