@@ -18,6 +18,7 @@
 		839E60001F6FD37D00C976DA /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FFF1F6FD37D00C976DA /* EmailViewController.swift */; };
 		839E60281F70803100C976DA /* SocialLinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E60271F70803100C976DA /* SocialLinksTableViewController.swift */; };
 		839E602A1F70804700C976DA /* SocialLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E60291F70804700C976DA /* SocialLinkTableViewCell.swift */; };
+		839E602C1F71586A00C976DA /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E602B1F71586900C976DA /* SocialViewController.swift */; };
 		83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474D1F673FF80094440A /* AppDelegate.swift */; };
 		83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474F1F673FF80094440A /* HomeScreenVC.swift */; };
 		83BC47531F673FF80094440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BC47511F673FF80094440A /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		839E60011F6FD63100C976DA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		839E60271F70803100C976DA /* SocialLinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLinksTableViewController.swift; sourceTree = "<group>"; };
 		839E60291F70804700C976DA /* SocialLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLinkTableViewCell.swift; sourceTree = "<group>"; };
+		839E602B1F71586900C976DA /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		83BC474A1F673FF80094440A /* BusinessApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BC474D1F673FF80094440A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BC474F1F673FF80094440A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				839E60271F70803100C976DA /* SocialLinksTableViewController.swift */,
+				839E602B1F71586900C976DA /* SocialViewController.swift */,
 			);
 			path = SocialLinks;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				839E5FF21F69E40800C976DA /* AboutUsViewController.swift in Sources */,
 				839E5FED1F6891F700C976DA /* ServicesViewController.swift in Sources */,
 				839E5FFB1F6E045100C976DA /* ContactUsViewController.swift in Sources */,
+				839E602C1F71586A00C976DA /* SocialViewController.swift in Sources */,
 				83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */,
 				839E60001F6FD37D00C976DA /* EmailViewController.swift in Sources */,
 				839E60281F70803100C976DA /* SocialLinksTableViewController.swift in Sources */,

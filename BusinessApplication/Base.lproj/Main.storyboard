@@ -672,7 +672,7 @@
                                 <connections>
                                     <outlet property="cellImage" destination="dUF-4X-OoL" id="moX-gV-YK0"/>
                                     <outlet property="cellTitle" destination="EDA-mG-qrx" id="97l-UW-h44"/>
-                                    <segue destination="WaB-g8-j3h" kind="show" id="vuT-vv-VgN"/>
+                                    <segue destination="WaB-g8-j3h" kind="show" identifier="ShowDetail" id="vuT-vv-VgN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -686,10 +686,10 @@
             </objects>
             <point key="canvasLocation" x="2341.5999999999999" y="259.52023988005999"/>
         </scene>
-        <!--View Controller-->
+        <!--Social View Controller-->
         <scene sceneID="ICf-CC-mDM">
             <objects>
-                <viewController id="WaB-g8-j3h" sceneMemberID="viewController">
+                <viewController id="WaB-g8-j3h" customClass="SocialViewController" customModule="BusinessApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EOo-9g-ird"/>
                         <viewControllerLayoutGuide type="bottom" id="iBK-8K-GUZ"/>
@@ -727,7 +727,14 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAq-5X-3Hx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WaB-g8-j3h" id="I7i-8A-aYq"/>
+                                </connections>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WsS-XU-VVb">
+                                <rect key="frame" x="168.5" y="258.5" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -736,10 +743,16 @@
                             <constraint firstItem="eAq-5X-3Hx" firstAttribute="leading" secondItem="qOT-0b-fpZ" secondAttribute="leading" id="fSw-XA-FjQ"/>
                             <constraint firstItem="iBK-8K-GUZ" firstAttribute="top" secondItem="0TH-0q-a81" secondAttribute="bottom" id="fYb-uP-YFv"/>
                             <constraint firstAttribute="trailing" secondItem="0TH-0q-a81" secondAttribute="trailing" id="jBf-6S-3aS"/>
+                            <constraint firstItem="WsS-XU-VVb" firstAttribute="centerY" secondItem="qOT-0b-fpZ" secondAttribute="centerY" id="ntA-gR-dJU"/>
                             <constraint firstAttribute="trailing" secondItem="eAq-5X-3Hx" secondAttribute="trailing" id="rnd-2F-K0U"/>
                             <constraint firstItem="eAq-5X-3Hx" firstAttribute="top" secondItem="EOo-9g-ird" secondAttribute="bottom" id="wB4-qH-v6I"/>
+                            <constraint firstItem="WsS-XU-VVb" firstAttribute="centerX" secondItem="qOT-0b-fpZ" secondAttribute="centerX" id="wBx-Xb-4Ic"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actInd" destination="WsS-XU-VVb" id="4Pr-JC-q0x"/>
+                        <outlet property="webView" destination="eAq-5X-3Hx" id="DSG-Kg-lzO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qw3-DD-TAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

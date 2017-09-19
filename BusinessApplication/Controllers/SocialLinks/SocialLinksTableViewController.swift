@@ -91,14 +91,21 @@ class SocialLinksTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "ShowDetail" {
+            
+            let dvc = segue.destination as! SocialViewController
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                dvc.socialData = titleList[indexPath.row] as String
+            }
+        }
     }
-    */
+    
 
 }
