@@ -16,6 +16,8 @@
 		839E5FFB1F6E045100C976DA /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FFA1F6E045100C976DA /* ContactUsViewController.swift */; };
 		839E5FFE1F6E049E00C976DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E5FFD1F6E049E00C976DA /* MapKit.framework */; };
 		839E60001F6FD37D00C976DA /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E5FFF1F6FD37D00C976DA /* EmailViewController.swift */; };
+		839E60281F70803100C976DA /* SocialLinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E60271F70803100C976DA /* SocialLinksTableViewController.swift */; };
+		839E602A1F70804700C976DA /* SocialLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E60291F70804700C976DA /* SocialLinkTableViewCell.swift */; };
 		83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474D1F673FF80094440A /* AppDelegate.swift */; };
 		83BC47501F673FF80094440A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC474F1F673FF80094440A /* HomeScreenVC.swift */; };
 		83BC47531F673FF80094440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BC47511F673FF80094440A /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		839E5FFD1F6E049E00C976DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		839E5FFF1F6FD37D00C976DA /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		839E60011F6FD63100C976DA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		839E60271F70803100C976DA /* SocialLinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLinksTableViewController.swift; sourceTree = "<group>"; };
+		839E60291F70804700C976DA /* SocialLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLinkTableViewCell.swift; sourceTree = "<group>"; };
 		83BC474A1F673FF80094440A /* BusinessApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BC474D1F673FF80094440A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BC474F1F673FF80094440A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		839E60261F70800900C976DA /* SocialLinks */ = {
+			isa = PBXGroup;
+			children = (
+				839E60271F70803100C976DA /* SocialLinksTableViewController.swift */,
+			);
+			path = SocialLinks;
+			sourceTree = "<group>";
+		};
 		83BC47411F673FF80094440A = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +155,7 @@
 		83BC475F1F67EC5B0094440A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				839E60261F70800900C976DA /* SocialLinks */,
 				839E5FF91F6E042200C976DA /* ContactUs */,
 				839E5FF31F6B367A00C976DA /* Portfolio */,
 				839E5FF01F69E3E100C976DA /* AboutUs */,
@@ -157,6 +170,7 @@
 			children = (
 				839E5FEE1F68920B00C976DA /* ServicesTableViewCell.swift */,
 				839E5FF61F6B36AE00C976DA /* PortfolioCollectionViewCell.swift */,
+				839E60291F70804700C976DA /* SocialLinkTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839E602A1F70804700C976DA /* SocialLinkTableViewCell.swift in Sources */,
 				83BC47631F67EC970094440A /* RoundedCornerButton.swift in Sources */,
 				839E5FEF1F68920B00C976DA /* ServicesTableViewCell.swift in Sources */,
 				839E5FEB1F6891E100C976DA /* ServicesTableViewController.swift in Sources */,
@@ -255,6 +270,7 @@
 				839E5FFB1F6E045100C976DA /* ContactUsViewController.swift in Sources */,
 				83BC474E1F673FF80094440A /* AppDelegate.swift in Sources */,
 				839E60001F6FD37D00C976DA /* EmailViewController.swift in Sources */,
+				839E60281F70803100C976DA /* SocialLinksTableViewController.swift in Sources */,
 				839E5FF71F6B36AE00C976DA /* PortfolioCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
